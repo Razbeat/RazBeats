@@ -15,13 +15,30 @@ const Footer: React.FC<FooterProps> = ({ onLinkClick }) => {
   const [subscribeStatus, setSubscribeStatus] = useState<'idle' | 'loading' | 'success'>('idle');
   const [email, setEmail] = useState('');
 
-  const handleSubscribe = () => {
+  const handleSubscribe = async () => {
     if (!email) return;
     setSubscribeStatus('loading');
-    setTimeout(() => {
-      setSubscribeStatus('success');
-      setEmail('');
-    }, 1500);
+    
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setSubscribeStatus('success');
+        setEmail('');
+      } else {
+        throw new Error('Failed to subscribe');
+      }
+    } catch (error) {
+      console.error('Subscription error:', error);
+      setSubscribeStatus('idle'); // Reset to allow retry
+      alert('משהו השתבש, נסה שוב מאוחר יותר');
+    }
   };
 
   return (
