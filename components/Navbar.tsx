@@ -62,9 +62,9 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick, cartCount, onOpenCart }) =>
           
           {/* Center Links - Desktop */}
           <div className={`hidden md:flex items-center gap-12 text-sm font-medium tracking-widest uppercase transition-colors duration-500 ${textColorClass}`} dir="rtl">
-            <a href="#products" onClick={(e) => handleLinkClick(e, 'products')} className="hover:opacity-60 transition-opacity">חנות</a>
-            <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:opacity-60 transition-opacity">עלינו</a>
-            <a href="#journal" onClick={(e) => handleLinkClick(e, 'journal')} className="hover:opacity-60 transition-opacity">בלוג</a>
+            <a href="#products" onClick={(e) => handleLinkClick(e, 'products')} className="hover:text-[#00A8B5] transition-colors">חנות</a>
+            <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:text-[#00A8B5] transition-colors">עלינו</a>
+            <a href="#journal" onClick={(e) => handleLinkClick(e, 'journal')} className="hover:text-[#00A8B5] transition-colors">בלוג</a>
           </div>
 
           {/* Right Actions */}
@@ -100,12 +100,12 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick, cartCount, onOpenCart }) =>
           mobileMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-10 pointer-events-none'
       }`} dir="rtl">
           <div className="flex flex-col items-center space-y-8 text-xl font-serif font-medium text-[#2C2A26]">
-            <a href="#products" onClick={(e) => handleLinkClick(e, 'products')} className="hover:opacity-60 transition-opacity">חנות</a>
-            <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:opacity-60 transition-opacity">עלינו</a>
-            <a href="#journal" onClick={(e) => handleLinkClick(e, 'journal')} className="hover:opacity-60 transition-opacity">בלוג</a>
+            <a href="#products" onClick={(e) => handleLinkClick(e, 'products')} className="hover:text-[#00A8B5] transition-colors">חנות</a>
+            <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:text-[#00A8B5] transition-colors">עלינו</a>
+            <a href="#journal" onClick={(e) => handleLinkClick(e, 'journal')} className="hover:text-[#00A8B5] transition-colors">בלוג</a>
             <button 
                 onClick={handleCartClick} 
-                className="hover:opacity-60 transition-opacity text-base uppercase tracking-widest font-sans mt-8"
+                className="hover:text-[#00A8B5] transition-colors text-base uppercase tracking-widest font-sans mt-8"
             >
                 עגלה ({cartCount})
             </button>

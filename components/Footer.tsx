@@ -70,7 +70,7 @@ const Footer: React.FC<FooterProps> = ({ onLinkClick }) => {
             <button 
               onClick={handleSubscribe}
               disabled={subscribeStatus !== 'idle' || !email}
-              className="self-start text-sm font-medium uppercase tracking-widest mt-2 hover:text-[#2C2A26] disabled:cursor-default disabled:hover:text-[#5D5A53] disabled:opacity-50 transition-opacity"
+              className="self-start text-sm font-medium uppercase tracking-widest mt-2 hover:text-[#00A8B5] disabled:cursor-default disabled:hover:text-[#5D5A53] disabled:opacity-50 transition-opacity"
             >
               {subscribeStatus === 'idle' && 'הרשמה'}
               {subscribeStatus === 'loading' && 'נרשם...'}

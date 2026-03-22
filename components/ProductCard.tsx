@@ -25,7 +25,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
         {/* Hover overlay with "Quick View" - minimalistic */}
         <div className="absolute inset-0 bg-[#2C2A26]/0 group-hover:bg-[#2C2A26]/5 transition-colors duration-500 flex items-center justify-center">
             <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                <span className="bg-white/90 backdrop-blur text-[#2C2A26] px-6 py-3 rounded-full text-xs uppercase tracking-widest font-medium">
+                <span className="bg-[#00A8B5] text-white px-6 py-3 rounded-full text-xs uppercase tracking-widest font-medium shadow-lg">
                     פרטים נוספים
                 </span>
             </div>

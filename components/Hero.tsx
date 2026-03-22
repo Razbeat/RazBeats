@@ -76,14 +76,14 @@ const Hero: React.FC = () => {
             <a 
               href="#products" 
               onClick={(e) => handleNavClick(e, 'products')}
-              className="w-full sm:w-auto px-10 md:px-16 py-4 md:py-6 bg-white text-[#0a0502] rounded-full text-xs md:text-sm font-black uppercase tracking-[0.2em] hover:bg-[#FFD700] transition-all duration-500 shadow-[0_0_40px_rgba(255,255,255,0.1)] hover:shadow-[0_0_60px_rgba(255,215,0,0.3)]"
+              className="w-full sm:w-auto px-10 md:px-16 py-4 md:py-6 bg-white text-[#0a0502] rounded-full text-xs md:text-sm font-black uppercase tracking-[0.2em] hover:bg-[#00A8B5] hover:text-white transition-all duration-500 shadow-[0_0_40px_rgba(255,255,255,0.1)] hover:shadow-[0_0_60px_rgba(0,168,181,0.3)]"
             >
               גלו את הקולקציה
             </a>
             <a 
               href="#about" 
               onClick={(e) => handleNavClick(e, 'about')}
-              className="w-full sm:w-auto px-10 md:px-16 py-4 md:py-6 bg-transparent border border-white/20 text-white rounded-full text-xs md:text-sm font-bold uppercase tracking-[0.2em] hover:bg-white/5 transition-all duration-500 backdrop-blur-sm"
+              className="w-full sm:w-auto px-10 md:px-16 py-4 md:py-6 bg-transparent border border-white/20 text-white rounded-full text-xs md:text-sm font-bold uppercase tracking-[0.2em] hover:bg-[#00A8B5]/20 hover:border-[#00A8B5]/50 transition-all duration-500 backdrop-blur-sm"
             >
               הסיפור שלנו
             </a>

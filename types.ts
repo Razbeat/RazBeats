@@ -27,12 +27,6 @@ export interface JournalArticle {
   content: React.ReactNode; // Allowing JSX for rich formatting/poems
 }
 
-export interface ChatMessage {
-  role: 'user' | 'model';
-  text: string;
-  timestamp: number;
-}
-
 export enum LoadingState {
   IDLE = 'IDLE',
   LOADING = 'LOADING',

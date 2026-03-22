@@ -82,7 +82,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack, onAddToC
              <div className="flex flex-col gap-4">
                <button 
                  onClick={() => onAddToCart(product)}
-                 className="w-full py-5 bg-[#2C2A26] text-[#F5F2EB] uppercase tracking-widest text-sm font-medium hover:bg-[#433E38] transition-colors"
+                 className="w-full py-5 bg-[#2C2A26] text-[#F5F2EB] uppercase tracking-widest text-sm font-medium hover:bg-[#00A8B5] transition-colors"
                >
                  הוסף לסל — ₪{product.price}
                </button>

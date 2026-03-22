@@ -93,7 +93,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose, items, onRemov
           <button 
             onClick={onCheckout}
             disabled={items.length === 0}
-            className="w-full py-4 bg-[#2C2A26] text-[#F5F2EB] uppercase tracking-widest text-sm font-medium hover:bg-[#433E38] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full py-4 bg-[#2C2A26] text-[#F5F2EB] uppercase tracking-widest text-sm font-medium hover:bg-[#00A8B5] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             לקופה
           </button>
